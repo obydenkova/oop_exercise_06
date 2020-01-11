@@ -8,10 +8,11 @@
 #include "Square.h"
 #include "List.h"
 #include "Allocator.h"
+#include "Queue.h"
 
 int main() {
     std::string command;
-    Containers::List<Square<int>, Allocator<Square<int>,1000>> figures;
+    Containers::Queue<Square<int>, Allocator<Square<int>,1000>> figures;
     while (std::cin >> command) {
         if (command == "add") {
             size_t position;
